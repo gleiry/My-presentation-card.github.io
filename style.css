@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+
+/*Estilos generales*/
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image-container img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del header */
+
+header {
+    background: #1f1f1f;
+    padding: 10px 50px;  
+}
+#logo {  
+    width: 50px;
+}
+#logo img{
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+/*Estilos del section*/
+
+#hero {
+    position: relative; /* Necesario para que los elementos absolute se posicionen sobre él */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#hero #computadora{
+    display: inline-block;
+    width: 100%;
+}
+#hero .informacion-contenedor {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 0 50px; 
+       
+}
+#foto {
+    width: 150px;
+    height: 150;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#foto img {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+}
+.informacion {
+    margin-left: 20px;
+    font-weight: bold;
+    width: calc(100% - 200px);
+}
+.informacion span {
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 70px;
+    text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+    #hero .informacion-contenedor {
+        width: 95%;
+        font-size: 14px;
+        padding: 10px;
+        top: 55%; /* Ajusta la posición en móviles */
+    }
+}
+@media screen and (max-width: 768px) {
+    .informacion-contenedor {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .informacion-contenedor {
+        text-align: left;
+        width: 50%;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+}
+/* Main */
+
+main {
+    padding: 100px;
+}
+main h1 {
+    margin-bottom: 30px
+}
+.social-icons img {
+    width: 30px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin-left: 8px;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+.social-icons a {
+    width: 50px;
+    height: 50px;
+}
+#WhatsApp {
+    background-color: #03b103;
+}
+#Instagram {
+    background: #ff5471;
+}
+#linkedin {
+    background: #0077b0;
+}
+#github {
+    background: #23272d;
+}
+
+/* Footer */
+footer {
+    background-color: gray;
+    height: 50px;
+}
+footer p {
+    position: sticky;
+    padding: 15px;    
+    width: 100%;
+    height: 100%;
+}
+
